@@ -1,9 +1,8 @@
 from datetime import datetime
 
-
 class Application:
     
-    def start(self):
+    def NameAndAge(self):
         age = 20        
         first_name = 'James'
         print(f'my name is {first_name} and my age is {age}')
@@ -24,3 +23,17 @@ class Application:
                 age = current_year - year_born
 
         print(f'So your name is {first_name} and you are {age} years old!')
+
+    def AddingTwoNumber(self):
+        
+        valid_numbers = False
+        while(not(valid_numbers)):
+            try:
+                first = float(input("First: "))
+                second = float(input("Second: "))
+                valid_numbers = True
+            except:
+                print("Not valid numbers, try again.")
+
+        sum = first + second
+        print(f'Sum: {sum}')    
